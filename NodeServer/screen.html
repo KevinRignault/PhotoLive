@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send image</title>
+  </head>
+  <body>
+
+    <p id="text"></p>
+    <img src="" style="width:100%;height:100%" />
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+
+      //-- Receice message from server
+      socket.on('display_image_b64', function(img){
+        
+        //-- Push image
+        var srcImage = 'data:image/jpeg;base64,'+img;
+        $("img").attr("src",srcImage);
+
+      });
+
+    </script>
+  </body>
+</html>

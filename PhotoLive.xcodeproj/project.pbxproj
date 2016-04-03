@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F385248B1C90C928001DB099 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385248A1C90C928001DB099 /* ImageManager.swift */; };
+		F3B20DDB1BF3DDAE00019B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20DDA1BF3DDAE00019B97 /* AppDelegate.swift */; };
+		F3B20DDD1BF3DDAE00019B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20DDC1BF3DDAE00019B97 /* ViewController.swift */; };
+		F3B20DE01BF3DDAE00019B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B20DDE1BF3DDAE00019B97 /* Main.storyboard */; };
+		F3B20DE21BF3DDAE00019B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B20DE11BF3DDAE00019B97 /* Assets.xcassets */; };
+		F3B20DE51BF3DDAE00019B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B20DE31BF3DDAE00019B97 /* LaunchScreen.storyboard */; };
+		F3B20DF01BF3DDAE00019B97 /* PhotoLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20DEF1BF3DDAE00019B97 /* PhotoLiveTests.swift */; };
+		F3B20DFB1BF3DDAE00019B97 /* PhotoLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20DFA1BF3DDAE00019B97 /* PhotoLiveUITests.swift */; };
+		F3B20E431BF3F00F00019B97 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E301BF3F00F00019B97 /* SocketAckEmitter.swift */; };
+		F3B20E441BF3F00F00019B97 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E311BF3F00F00019B97 /* SocketAckManager.swift */; };
+		F3B20E451BF3F00F00019B97 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E321BF3F00F00019B97 /* SocketAnyEvent.swift */; };
+		F3B20E461BF3F00F00019B97 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E331BF3F00F00019B97 /* SocketEngine.swift */; };
+		F3B20E471BF3F00F00019B97 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E341BF3F00F00019B97 /* SocketEngineClient.swift */; };
+		F3B20E481BF3F00F00019B97 /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E351BF3F00F00019B97 /* SocketEnginePacketType.swift */; };
+		F3B20E491BF3F00F00019B97 /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E361BF3F00F00019B97 /* SocketEngineSpec.swift */; };
+		F3B20E4A1BF3F00F00019B97 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E371BF3F00F00019B97 /* SocketEventHandler.swift */; };
+		F3B20E4B1BF3F00F00019B97 /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E381BF3F00F00019B97 /* SocketFixUTF8.swift */; };
+		F3B20E4C1BF3F00F00019B97 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E391BF3F00F00019B97 /* SocketIOClient.swift */; };
+		F3B20E4D1BF3F00F00019B97 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3A1BF3F00F00019B97 /* SocketIOClientOption.swift */; };
+		F3B20E4E1BF3F00F00019B97 /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3B1BF3F00F00019B97 /* SocketIOClientStatus.swift */; };
+		F3B20E4F1BF3F00F00019B97 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3C1BF3F00F00019B97 /* SocketLogger.swift */; };
+		F3B20E501BF3F00F00019B97 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3D1BF3F00F00019B97 /* SocketPacket.swift */; };
+		F3B20E511BF3F00F00019B97 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3E1BF3F00F00019B97 /* SocketParser.swift */; };
+		F3B20E521BF3F00F00019B97 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E3F1BF3F00F00019B97 /* SocketStringReader.swift */; };
+		F3B20E531BF3F00F00019B97 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E401BF3F00F00019B97 /* SocketTypes.swift */; };
+		F3B20E541BF3F00F00019B97 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E411BF3F00F00019B97 /* SwiftRegex.swift */; };
+		F3B20E551BF3F00F00019B97 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B20E421BF3F00F00019B97 /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3B20DEC1BF3DDAE00019B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B20DCF1BF3DDAE00019B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B20DD61BF3DDAE00019B97;
+			remoteInfo = "Socket-Send-Images";
+		};
+		F3B20DF71BF3DDAE00019B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B20DCF1BF3DDAE00019B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B20DD61BF3DDAE00019B97;
+			remoteInfo = "Socket-Send-Images";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F385248A1C90C928001DB099 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		F3B20DD71BF3DDAE00019B97 /* PhotoLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B20DDA1BF3DDAE00019B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3B20DDC1BF3DDAE00019B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3B20DDF1BF3DDAE00019B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3B20DE11BF3DDAE00019B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3B20DE41BF3DDAE00019B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3B20DE61BF3DDAE00019B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B20DEB1BF3DDAE00019B97 /* PhotoLive.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoLive.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B20DEF1BF3DDAE00019B97 /* PhotoLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLiveTests.swift; sourceTree = "<group>"; };
+		F3B20DF11BF3DDAE00019B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B20DF61BF3DDAE00019B97 /* PhotoLive.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoLive.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B20DFA1BF3DDAE00019B97 /* PhotoLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLiveUITests.swift; sourceTree = "<group>"; };
+		F3B20DFC1BF3DDAE00019B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B20E301BF3F00F00019B97 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		F3B20E311BF3F00F00019B97 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		F3B20E321BF3F00F00019B97 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		F3B20E331BF3F00F00019B97 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		F3B20E341BF3F00F00019B97 /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		F3B20E351BF3F00F00019B97 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		F3B20E361BF3F00F00019B97 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		F3B20E371BF3F00F00019B97 /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		F3B20E381BF3F00F00019B97 /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketFixUTF8.swift; sourceTree = "<group>"; };
+		F3B20E391BF3F00F00019B97 /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		F3B20E3A1BF3F00F00019B97 /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		F3B20E3B1BF3F00F00019B97 /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		F3B20E3C1BF3F00F00019B97 /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		F3B20E3D1BF3F00F00019B97 /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		F3B20E3E1BF3F00F00019B97 /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParser.swift; sourceTree = "<group>"; };
+		F3B20E3F1BF3F00F00019B97 /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		F3B20E401BF3F00F00019B97 /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		F3B20E411BF3F00F00019B97 /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = "<group>"; };
+		F3B20E421BF3F00F00019B97 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B20DD41BF3DDAE00019B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DE81BF3DDAE00019B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DF31BF3DDAE00019B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3B20DCE1BF3DDAE00019B97 = {
+			isa = PBXGroup;
+			children = (
+				F3B20DD91BF3DDAE00019B97 /* PhotoLive */,
+				F3B20DEE1BF3DDAE00019B97 /* PhotoLiveTests */,
+				F3B20DF91BF3DDAE00019B97 /* PhotoLiveUITests */,
+				F3B20DD81BF3DDAE00019B97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B20DD81BF3DDAE00019B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B20DD71BF3DDAE00019B97 /* PhotoLive.app */,
+				F3B20DEB1BF3DDAE00019B97 /* PhotoLive.xctest */,
+				F3B20DF61BF3DDAE00019B97 /* PhotoLive.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B20DD91BF3DDAE00019B97 /* PhotoLive */ = {
+			isa = PBXGroup;
+			children = (
+				F3B20E2F1BF3F00F00019B97 /* SocketIOClientSwift */,
+				F3B20DDA1BF3DDAE00019B97 /* AppDelegate.swift */,
+				F3B20DDC1BF3DDAE00019B97 /* ViewController.swift */,
+				F385248A1C90C928001DB099 /* ImageManager.swift */,
+				F3B20DDE1BF3DDAE00019B97 /* Main.storyboard */,
+				F3B20DE11BF3DDAE00019B97 /* Assets.xcassets */,
+				F3B20DE31BF3DDAE00019B97 /* LaunchScreen.storyboard */,
+				F3B20DE61BF3DDAE00019B97 /* Info.plist */,
+			);
+			path = PhotoLive;
+			sourceTree = "<group>";
+		};
+		F3B20DEE1BF3DDAE00019B97 /* PhotoLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B20DEF1BF3DDAE00019B97 /* PhotoLiveTests.swift */,
+				F3B20DF11BF3DDAE00019B97 /* Info.plist */,
+			);
+			path = PhotoLiveTests;
+			sourceTree = "<group>";
+		};
+		F3B20DF91BF3DDAE00019B97 /* PhotoLiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B20DFA1BF3DDAE00019B97 /* PhotoLiveUITests.swift */,
+				F3B20DFC1BF3DDAE00019B97 /* Info.plist */,
+			);
+			path = PhotoLiveUITests;
+			sourceTree = "<group>";
+		};
+		F3B20E2F1BF3F00F00019B97 /* SocketIOClientSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F3B20E301BF3F00F00019B97 /* SocketAckEmitter.swift */,
+				F3B20E311BF3F00F00019B97 /* SocketAckManager.swift */,
+				F3B20E321BF3F00F00019B97 /* SocketAnyEvent.swift */,
+				F3B20E331BF3F00F00019B97 /* SocketEngine.swift */,
+				F3B20E341BF3F00F00019B97 /* SocketEngineClient.swift */,
+				F3B20E351BF3F00F00019B97 /* SocketEnginePacketType.swift */,
+				F3B20E361BF3F00F00019B97 /* SocketEngineSpec.swift */,
+				F3B20E371BF3F00F00019B97 /* SocketEventHandler.swift */,
+				F3B20E381BF3F00F00019B97 /* SocketFixUTF8.swift */,
+				F3B20E391BF3F00F00019B97 /* SocketIOClient.swift */,
+				F3B20E3A1BF3F00F00019B97 /* SocketIOClientOption.swift */,
+				F3B20E3B1BF3F00F00019B97 /* SocketIOClientStatus.swift */,
+				F3B20E3C1BF3F00F00019B97 /* SocketLogger.swift */,
+				F3B20E3D1BF3F00F00019B97 /* SocketPacket.swift */,
+				F3B20E3E1BF3F00F00019B97 /* SocketParser.swift */,
+				F3B20E3F1BF3F00F00019B97 /* SocketStringReader.swift */,
+				F3B20E401BF3F00F00019B97 /* SocketTypes.swift */,
+				F3B20E411BF3F00F00019B97 /* SwiftRegex.swift */,
+				F3B20E421BF3F00F00019B97 /* WebSocket.swift */,
+			);
+			path = SocketIOClientSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B20DD61BF3DDAE00019B97 /* PhotoLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B20DFF1BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLive" */;
+			buildPhases = (
+				F3B20DD31BF3DDAE00019B97 /* Sources */,
+				F3B20DD41BF3DDAE00019B97 /* Frameworks */,
+				F3B20DD51BF3DDAE00019B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoLive;
+			productName = "Socket-Send-Images";
+			productReference = F3B20DD71BF3DDAE00019B97 /* PhotoLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3B20DEA1BF3DDAE00019B97 /* PhotoLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B20E021BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLiveTests" */;
+			buildPhases = (
+				F3B20DE71BF3DDAE00019B97 /* Sources */,
+				F3B20DE81BF3DDAE00019B97 /* Frameworks */,
+				F3B20DE91BF3DDAE00019B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B20DED1BF3DDAE00019B97 /* PBXTargetDependency */,
+			);
+			name = PhotoLiveTests;
+			productName = "Socket-Send-ImagesTests";
+			productReference = F3B20DEB1BF3DDAE00019B97 /* PhotoLive.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3B20DF51BF3DDAE00019B97 /* PhotoLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B20E051BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLiveUITests" */;
+			buildPhases = (
+				F3B20DF21BF3DDAE00019B97 /* Sources */,
+				F3B20DF31BF3DDAE00019B97 /* Frameworks */,
+				F3B20DF41BF3DDAE00019B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B20DF81BF3DDAE00019B97 /* PBXTargetDependency */,
+			);
+			name = PhotoLiveUITests;
+			productName = "Socket-Send-ImagesUITests";
+			productReference = F3B20DF61BF3DDAE00019B97 /* PhotoLive.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B20DCF1BF3DDAE00019B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kévin Rignault";
+				TargetAttributes = {
+					F3B20DD61BF3DDAE00019B97 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = F6BCCV7GW3;
+					};
+					F3B20DEA1BF3DDAE00019B97 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = ZDR2UKF3L9;
+						TestTargetID = F3B20DD61BF3DDAE00019B97;
+					};
+					F3B20DF51BF3DDAE00019B97 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = ZDR2UKF3L9;
+						TestTargetID = F3B20DD61BF3DDAE00019B97;
+					};
+				};
+			};
+			buildConfigurationList = F3B20DD21BF3DDAE00019B97 /* Build configuration list for PBXProject "PhotoLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3B20DCE1BF3DDAE00019B97;
+			productRefGroup = F3B20DD81BF3DDAE00019B97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3B20DD61BF3DDAE00019B97 /* PhotoLive */,
+				F3B20DEA1BF3DDAE00019B97 /* PhotoLiveTests */,
+				F3B20DF51BF3DDAE00019B97 /* PhotoLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3B20DD51BF3DDAE00019B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B20DE51BF3DDAE00019B97 /* LaunchScreen.storyboard in Resources */,
+				F3B20DE21BF3DDAE00019B97 /* Assets.xcassets in Resources */,
+				F3B20DE01BF3DDAE00019B97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DE91BF3DDAE00019B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DF41BF3DDAE00019B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B20DD31BF3DDAE00019B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B20E481BF3F00F00019B97 /* SocketEnginePacketType.swift in Sources */,
+				F3B20E471BF3F00F00019B97 /* SocketEngineClient.swift in Sources */,
+				F3B20E4B1BF3F00F00019B97 /* SocketFixUTF8.swift in Sources */,
+				F3B20E4C1BF3F00F00019B97 /* SocketIOClient.swift in Sources */,
+				F3B20E511BF3F00F00019B97 /* SocketParser.swift in Sources */,
+				F3B20E4A1BF3F00F00019B97 /* SocketEventHandler.swift in Sources */,
+				F3B20E521BF3F00F00019B97 /* SocketStringReader.swift in Sources */,
+				F3B20E541BF3F00F00019B97 /* SwiftRegex.swift in Sources */,
+				F3B20E461BF3F00F00019B97 /* SocketEngine.swift in Sources */,
+				F385248B1C90C928001DB099 /* ImageManager.swift in Sources */,
+				F3B20E491BF3F00F00019B97 /* SocketEngineSpec.swift in Sources */,
+				F3B20E451BF3F00F00019B97 /* SocketAnyEvent.swift in Sources */,
+				F3B20E441BF3F00F00019B97 /* SocketAckManager.swift in Sources */,
+				F3B20E4E1BF3F00F00019B97 /* SocketIOClientStatus.swift in Sources */,
+				F3B20E551BF3F00F00019B97 /* WebSocket.swift in Sources */,
+				F3B20E431BF3F00F00019B97 /* SocketAckEmitter.swift in Sources */,
+				F3B20E4F1BF3F00F00019B97 /* SocketLogger.swift in Sources */,
+				F3B20DDD1BF3DDAE00019B97 /* ViewController.swift in Sources */,
+				F3B20E4D1BF3F00F00019B97 /* SocketIOClientOption.swift in Sources */,
+				F3B20E531BF3F00F00019B97 /* SocketTypes.swift in Sources */,
+				F3B20E501BF3F00F00019B97 /* SocketPacket.swift in Sources */,
+				F3B20DDB1BF3DDAE00019B97 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DE71BF3DDAE00019B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B20DF01BF3DDAE00019B97 /* PhotoLiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B20DF21BF3DDAE00019B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B20DFB1BF3DDAE00019B97 /* PhotoLiveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3B20DED1BF3DDAE00019B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B20DD61BF3DDAE00019B97 /* PhotoLive */;
+			targetProxy = F3B20DEC1BF3DDAE00019B97 /* PBXContainerItemProxy */;
+		};
+		F3B20DF81BF3DDAE00019B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B20DD61BF3DDAE00019B97 /* PhotoLive */;
+			targetProxy = F3B20DF71BF3DDAE00019B97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3B20DDE1BF3DDAE00019B97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B20DDF1BF3DDAE00019B97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3B20DE31BF3DDAE00019B97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B20DE41BF3DDAE00019B97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3B20DFD1BF3DDAE00019B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3B20DFE1BF3DDAE00019B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3B20E001BF3DDAE00019B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Socket-Send-Images/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-Images";
+				PRODUCT_NAME = PhotoLive;
+			};
+			name = Debug;
+		};
+		F3B20E011BF3DDAE00019B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Socket-Send-Images/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-Images";
+				PRODUCT_NAME = PhotoLive;
+			};
+			name = Release;
+		};
+		F3B20E031BF3DDAE00019B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Socket-Send-ImagesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-ImagesTests";
+				PRODUCT_NAME = PhotoLive;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoLive.app/PhotoLive";
+			};
+			name = Debug;
+		};
+		F3B20E041BF3DDAE00019B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Socket-Send-ImagesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-ImagesTests";
+				PRODUCT_NAME = PhotoLive;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoLive.app/PhotoLive";
+			};
+			name = Release;
+		};
+		F3B20E061BF3DDAE00019B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Socket-Send-ImagesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-ImagesUITests";
+				PRODUCT_NAME = PhotoLive;
+				TEST_TARGET_NAME = "Socket-Send-Images";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F3B20E071BF3DDAE00019B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Socket-Send-ImagesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Socket-Send-ImagesUITests";
+				PRODUCT_NAME = PhotoLive;
+				TEST_TARGET_NAME = "Socket-Send-Images";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B20DD21BF3DDAE00019B97 /* Build configuration list for PBXProject "PhotoLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B20DFD1BF3DDAE00019B97 /* Debug */,
+				F3B20DFE1BF3DDAE00019B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B20DFF1BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B20E001BF3DDAE00019B97 /* Debug */,
+				F3B20E011BF3DDAE00019B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B20E021BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B20E031BF3DDAE00019B97 /* Debug */,
+				F3B20E041BF3DDAE00019B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B20E051BF3DDAE00019B97 /* Build configuration list for PBXNativeTarget "PhotoLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B20E061BF3DDAE00019B97 /* Debug */,
+				F3B20E071BF3DDAE00019B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3B20DCF1BF3DDAE00019B97 /* Project object */;
+}
